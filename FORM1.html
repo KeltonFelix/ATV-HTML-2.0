@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário elaborado</title>
+
+    <style>
+         form {
+            width: 100%;
+            max-width: 900px;
+            margin: 80px auto;
+        }
+
+* {
+    box-sizing: border-box;
+}
+        input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3px;
+
+}
+    </style>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+
+    <form>
+      <fieldset>
+        <legend><strong> Dados Pessoais </strong></legend>
+        Nome:
+        <input
+          type="text"
+          name="nome"
+          placeholder="Digite o nome completo do aluno:"
+          required
+          size="28"
+        /><br /><br />
+        Endereço:
+        <input
+          type="text"
+          name="endereco"
+          placeholder="Digite seu endereço:"
+          size="26"
+        /><br /><br />
+        Cidade:
+        <input
+          type="text"
+          name="cidade"
+          placeholder="Digite sua cidade: "
+        /><br /><br />
+        Estado:
+        <select name="estado">
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="BA">Bahia</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong> Dados Acadêmicos </strong></legend>
+        Natureza do Curso: <br /><br />
+        <input type="radio" name="natureza" /> Gerência
+        <input type="radio" name="natureza" /> Financeiro
+        <input type="radio" name="natureza" /> Recepção
+        <input type="radio" name="natureza" /> Administrativo
+        <input type="radio" name="natureza" /> Juridico <br /><br />
+
+        Área de interesse: <br /><br />
+        <input type="checkbox" name="computacao" /> Computação
+        <input type="checkbox" name="Biologia" /> Biologia
+        <input type="checkbox" name="meio_ambiente" /> Meio ambiente
+        <input type="checkbox" name="engenharia" /> Engenharia
+        <input type="checkbox" name="História" /> História <br /><br />
+
+        Mini-Curriculo:
+        <textarea
+          name="Mini_curriculo"
+          placeholder="Digite Um Mini Curriculo!"
+          cols="60"
+          rows="5"
+        ></textarea
+        ><br /><br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
